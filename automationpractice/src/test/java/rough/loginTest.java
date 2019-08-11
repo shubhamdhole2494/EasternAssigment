@@ -18,6 +18,8 @@ import automationpractice.base.TestBase;
 import automationpractice.utilities.Utilities;
 
 public class loginTest extends TestBase{
+	
+	double shippingCharge = 2.00;
 	@Test
 	public  void testPra() throws IOException, InterruptedException{
 		
@@ -81,6 +83,15 @@ public class loginTest extends TestBase{
 		double tPrice = Double.valueOf(totalProductPrice);
 		Assert.assertEquals(totalProductPrice, tPrice);
 		System.out.println("pass");
+		String wShipping = driver.findElement(By.xpath("//span[@id='total_price']")).getText();
+		System.out.println(wShipping);
+		String str2 = wShipping.replaceAll("[-+^:,$]", "");
+		double shippingP = Double.parseDouble(str2);
+		System.out.println(shippingP);
+		//System.out.println(shippingP);*/
+		/*double ttt = tPrice + shippingCharge;
+		System.out.println(ttt);*/
+		
 	
 	}
 	

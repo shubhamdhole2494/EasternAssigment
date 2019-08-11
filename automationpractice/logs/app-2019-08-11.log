@@ -1,0 +1,61 @@
+23:16:53.956 DEBUG TestBase -Config file Loaded
+23:16:56.902 DEBUG TestBase -Chrome browser opened
+23:16:58.036 DEBUG TestBase -Maximize
+23:17:07.085 DEBUG TestBase -Get URL
+23:29:24.218 DEBUG TestBase -Config file Loaded
+23:29:27.112 DEBUG TestBase -Chrome browser opened
+23:29:28.228 DEBUG TestBase -Maximize
+23:29:39.772 DEBUG TestBase -Navigate to Website
+23:29:39.777 DEBUG TestBase -Wait for 10 secends
+23:29:42.362 DEBUG TestBase -Clicked on Sign In link
+23:29:42.512 DEBUG TestBase -Enter a emailID
+23:29:42.643 DEBUG TestBase -Clicked on Register Button
+23:29:45.698 DEBUG TestBase -Select Title
+23:29:45.790 DEBUG TestBase -Enter first name
+23:29:45.874 DEBUG TestBase -Enter last name
+23:29:45.962 DEBUG TestBase -Enter password
+23:29:46.073 DEBUG TestBase -Enter day
+23:29:46.190 DEBUG TestBase -Enter month
+23:29:46.282 DEBUG TestBase -Enter year
+23:29:52.864 DEBUG TestBase -Clicked on Register Button
+23:33:40.642 DEBUG TestBase -Config file Loaded
+23:33:43.555 DEBUG TestBase -Chrome browser opened
+23:33:44.678 DEBUG TestBase -Maximize
+23:33:59.742 DEBUG TestBase -Navigate to Website
+23:33:59.750 DEBUG TestBase -Wait for 10 secends
+23:34:02.050 DEBUG TestBase -Clicked on Sign In link
+23:34:02.170 DEBUG TestBase -Enter a emailID
+23:34:02.273 DEBUG TestBase -Clicked on Register Button
+23:34:04.642 DEBUG TestBase -Select Title
+23:34:04.780 DEBUG TestBase -Enter first name
+23:34:04.860 DEBUG TestBase -Enter last name
+23:34:04.959 DEBUG TestBase -Enter password
+23:34:05.068 DEBUG TestBase -Enter day
+23:34:05.167 DEBUG TestBase -Enter month
+23:34:05.271 DEBUG TestBase -Enter year
+23:34:09.157 DEBUG TestBase -Clicked on Register Button
+23:39:25.372 DEBUG TestBase -Config file Loaded
+23:39:28.234 DEBUG TestBase -Chrome browser opened
+23:39:29.355 DEBUG TestBase -Maximize
+23:39:47.666 DEBUG TestBase -Navigate to Website
+23:39:47.675 DEBUG TestBase -Wait for 10 secends
+23:46:49.863 DEBUG TestBase -Config file Loaded
+23:46:52.992 DEBUG TestBase -Chrome browser opened
+23:46:54.108 DEBUG TestBase -Maximize
+23:47:05.990 DEBUG TestBase -Navigate to Website
+23:47:05.994 DEBUG TestBase -Wait for 10 secends
+23:50:50.297 DEBUG TestBase -Config file Loaded
+23:50:53.306 DEBUG TestBase -Chrome browser opened
+23:50:54.473 DEBUG TestBase -Maximize
+23:51:08.141 DEBUG TestBase -Navigate to Website
+23:51:08.145 DEBUG TestBase -Wait for 10 secends
+23:54:12.954 DEBUG TestBase -Config file Loaded
+23:54:16.227 DEBUG TestBase -Chrome browser opened
+23:54:17.375 DEBUG TestBase -Maximize
+23:54:26.460 DEBUG TestBase -Navigate to Website
+23:54:26.468 DEBUG TestBase -Wait for 10 secends
+23:57:33.693 DEBUG TestBase -Config file Loaded
+23:57:36.713 DEBUG TestBase -Chrome browser opened
+23:57:37.872 DEBUG TestBase -Maximize
+23:57:50.791 DEBUG TestBase -Navigate to Website
+23:57:50.799 DEBUG TestBase -Wait for 10 secends

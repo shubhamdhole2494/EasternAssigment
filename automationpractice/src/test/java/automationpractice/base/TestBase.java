@@ -1,23 +1,18 @@
 package automationpractice.base;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.sql.Driver;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+
+
 
 public class TestBase {
 	
@@ -29,7 +24,7 @@ public class TestBase {
 	public static final Logger log = LogManager.getLogger(TestBase.class.getName());
 	
 	
-	//@BeforeSuite
+	
 	public static void setUp() throws IOException{
 		if(driver==null){
 			
@@ -44,20 +39,23 @@ public class TestBase {
 			}else if(config.getProperty("browser").equals("firefox")){
 				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/test/resources/drivers/geckodriver.exe");
 				driver = new FirefoxDriver();
+				log.debug("Mozilla browser opened");
 			}else if(config.getProperty("browser").equals("IE")){
 				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/test/resources/drivers/IEDriverServer.exe");
-				driver = new FirefoxDriver();
+				driver = new InternetExplorerDriver();
+				log.debug("Internet Explore browser opened");
 			}
 			driver.manage().window().maximize();
 			log.debug("Maximize");
 			driver.get(config.getProperty("baseURL"));
-			log.debug("Get URL");
+			log.debug("Navigate to Website");
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicitWait")), TimeUnit.SECONDS);
+			log.debug("Wait for 10 secends");
 		}
 		
 		
 	}
-	//@AfterSuite
+	
 	public static void tearDown(){
 		driver.close();
 	}

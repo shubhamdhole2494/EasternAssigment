@@ -1,0 +1,27 @@
+00:02:28.712 DEBUG TestBase -Config file Loaded
+00:02:31.900 DEBUG TestBase -Chrome browser opened
+00:02:33.029 DEBUG TestBase -Maximize
+00:02:41.163 DEBUG TestBase -Navigate to Website
+00:02:41.171 DEBUG TestBase -Wait for 10 secends
+00:05:00.869 DEBUG TestBase -Config file Loaded
+00:05:03.823 DEBUG TestBase -Chrome browser opened
+00:05:04.938 DEBUG TestBase -Maximize
+00:05:12.318 DEBUG TestBase -Navigate to Website
+00:05:12.323 DEBUG TestBase -Wait for 10 secends
+00:08:22.936 DEBUG TestBase -Config file Loaded
+00:08:25.919 DEBUG TestBase -Chrome browser opened
+00:08:27.045 DEBUG TestBase -Maximize
+00:08:36.461 DEBUG TestBase -Navigate to Website
+00:08:36.465 DEBUG TestBase -Wait for 10 secends
+00:08:38.540 DEBUG TestBase -Clicked on Sign In link
+00:08:38.677 DEBUG TestBase -Enter a emailID
+00:08:38.768 DEBUG TestBase -Clicked on Register Button
+00:08:40.863 DEBUG TestBase -Select Title
+00:08:40.944 DEBUG TestBase -Enter first name
+00:08:41.028 DEBUG TestBase -Enter last name
+00:08:41.133 DEBUG TestBase -Enter password
+00:08:41.267 DEBUG TestBase -Enter day
+00:08:41.390 DEBUG TestBase -Enter month
+00:08:41.502 DEBUG TestBase -Enter year
+00:08:44.071 DEBUG TestBase -Clicked on Register Button
+00:09:49.175 DEBUG TestBase -Close browser

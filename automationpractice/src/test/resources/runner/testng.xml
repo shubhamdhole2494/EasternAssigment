@@ -3,7 +3,8 @@
 <suite name="AutomationTest" parallel="none">
   <test name="RegisterTest">
     <classes>
-      <class name="automationpractice.testCases.RegisterTest" />
+      <class name="automationpractice.testCases.TestCases" />
     </classes>
   </test> <!-- RegisterTest -->
 </suite> <!-- AutomationTest -->
+z

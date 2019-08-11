@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="automationpractice.testCases.RegisterTest">
+      <class name="rough.loginTest">
         <methods>
-          <include name="verifyPriceIncludingShipping"/>
-          <include name="verifyFinalPrice"/>
-          <include name="registerNewUser"/>
-          <include name="login"/>
+          <include name="testPra"/>
         </methods>
-      </class> <!-- automationpractice.testCases.RegisterTest -->
+      </class> <!-- rough.loginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

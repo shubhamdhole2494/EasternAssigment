@@ -1,29 +1,21 @@
 package automationpractice.testCases;
 
 import java.io.IOException;
-import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import automationpractice.PageObject.Home_Page;
 import automationpractice.PageObject.Nav_bar;
 import automationpractice.PageObject.Register_Page;
-import automationpractice.PageObject.Register_Page_Locator;
 import automationpractice.PageObject.Sign_In_Page;
 import automationpractice.base.TestBase;
 import automationpractice.utilities.Utilities;
 
-public class RegisterTest extends TestBase{
+public class TestCases extends TestBase{
 	
 	public static String emailID = Utilities.getAlphaNumericString(6)+"@gmail.com";
 	double tPrice;
@@ -43,10 +35,13 @@ public class RegisterTest extends TestBase{
 		reg = new Register_Page();
 		
 		home.clickedOnSignInButton();
-		
+		log.debug("Clicked on Sign In link");
 		signIn.enterEmailAddress(emailID);
+		log.debug("Enter a emailID");
 		signIn.clickedOnRegisterButton();
+		log.debug("Clicked on Register Button");
 		reg.fillRegistrationForm("logi", "tech", "123456", "1", "2019", "1", "logi", "tech", "pune katraj", "pune", "9", "00000", "21", "1234567890", "pune katraj");
+		log.debug("Clicked on Register Button");
 		String expectedURL = "http://automationpractice.com/index.php?controller=my-account";
 		Assert.assertEquals(driver.getCurrentUrl(), expectedURL);
 		wait = new WebDriverWait(driver, 5000);
@@ -56,16 +51,6 @@ public class RegisterTest extends TestBase{
 	@Test(priority = 2)
 	public void login() throws IOException{
 		
-		/*System.out.println(emailID);
-		
-		home = new Home_Page();
-		signIn = new Sign_In_Page();
-		home.clickedOnSignInButton();
-		signIn.loginToWebsite(emailID, "123456");
-		String expectedURL = "http://automationpractice.com/index.php?controller=my-account";
-		Assert.assertEquals(driver.getCurrentUrl(), expectedURL);
-		wait = new WebDriverWait(driver, 5000);*/
-		//driver.findElement(By.xpath("//a[@class='sf-with-ul'][contains(text(),'Women')]")).click();
 		navBar = new Nav_bar();
 		navBar.clickedOnwomenNav();
 		wait = new WebDriverWait(driver, 5000);
@@ -117,10 +102,13 @@ public class RegisterTest extends TestBase{
 		
 		
 		String wShipping = driver.findElement(By.xpath("//span[@id='total_price']")).getText();
-		wShipping.replaceAll("[-+^:,$]", "");
-		double shippingP = Double.valueOf(wShipping);
-		
-			Assert.assertTrue(tPrice+shippingCharge == shippingP);
+		String withShipping = wShipping.replaceAll("[-+^:,$]", "");
+		double shippingP = Double.valueOf(withShipping);
+		double ttt = tPrice + shippingCharge;
+			Assert.assertTrue(ttt == shippingP);
+			
+		TestBase.tearDown();
+		log.debug("Close browser"); 
 		
 	}
 	
