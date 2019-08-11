@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationTest]" parallel="none">
+  <test name="RegisterTest(failed)" parallel="none">
+    <classes>
+      <class name="automationpractice.testCases.RegisterTest">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- automationpractice.testCases.RegisterTest -->
+    </classes>
+  </test> <!-- RegisterTest(failed) -->
+</suite> <!-- Failed suite [AutomationTest] -->
